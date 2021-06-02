@@ -17,11 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
-let numGatti = 140
-let numPerFila = 8
+let gatti = 44
+let gattiPerFila = 6
 
-let gattiMancanti = numGatti % numPerFila
-
-console.log('Il numero delle file di gatti è: ' + Math.ceil(numGatti / numPerFila))
-if (gattiMancanti != 0)
-    console.log('Il numero di gatti mancanti per l ultima fila è :' + gattiMancanti)
+let numeroFile = Math.ceil(gatti / gattiPerFila)
+let gattiMancanti = numeroFile * gattiPerFila - gatti
+console.log('Il numero delle file di gatti è: ' + numeroFile)
+console.log('Il numero di gatti mancanti per l ultima fila è :' + gattiMancanti)
